@@ -1,1 +1,0 @@
-print("Enviroment ready")
