@@ -14,6 +14,9 @@ if isinstance(ports, dict):
 
 # Create report list
 report = []
+high_count = 0
+medium_count = 0
+low_count = 0
 report.append("# SOC-in-a-Box Security Report\n")
 
 # If no ports found
@@ -61,6 +64,14 @@ else:
             severity = "LOW"
             risk = "Unknown or less common service"
             fix = "Review service necessity"
+
+        # ✅ Count severity
+        if severity == "HIGH":
+            high_count += 1
+        elif severity == "MEDIUM":
+            medium_count += 1
+        else:
+            low_count += 1
 
         # Add to report
         report.append(f"## [{severity}] Port {port_id}/{protocol} ({service})")
