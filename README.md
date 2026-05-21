@@ -95,5 +95,9 @@ Add dashboard visualization (Streamlit)
 Integrate SIEM tools (Wazuh / ELK)
 Automate continuous scanning
 
+## Live Dashboard
+
+[Open SOC-in-a-Box Dashboard](https://soc-in-a-box-qfr6m95plujnhgbrru5sbq.streamlit.app)
+
 Author
 Sofiya. 
