@@ -30,4 +30,8 @@ Fix: Restrict access using firewall or disable if not needed.
 
 Only scan systems you own or have permission to test.
 
+## Dashboard Preview
 
+![Dashboard 1](screenshots/dashboard1.png)
+
+![Dashboard 2](screenshots/dashboard2.png)

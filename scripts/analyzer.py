@@ -112,3 +112,27 @@ with open("reports/final_report.md", "w") as file:
     file.write("\n".join(report))
 
 print("Final report created: reports/final_report.md")
+
+import streamlit as st
+
+st.title("🔐 SOC-in-a-Box Dashboard")
+
+st.header("Security Summary")
+
+# Example values (we will improve later)
+high = 1
+medium = 1
+low = 0
+
+st.metric("High Risk", high)
+st.metric("Medium Risk", medium)
+st.metric("Low Risk", low)
+
+st.header("Reports")
+
+st.write("### Nmap Report")
+with open("reports/final_report.md", "r") as f:
+    st.text(f.read())
+
+st.write("### ZAP Report")
+st.write("Open zap_report.html in browser for full details")
